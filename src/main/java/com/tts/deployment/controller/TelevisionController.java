@@ -15,5 +15,10 @@ public class TelevisionController {
         return new Television(1L, "1080p", "30", "XR35", "Sony");
     }
 
+    @GetMapping("/get4k")
+    public Television getOtherTelevision() {
+        return new Television(2L, "4k", "50", "XR36", "Sony");
+    }
+
 
 }
